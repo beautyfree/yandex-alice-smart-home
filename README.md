@@ -1,0 +1,1 @@
+# yandex-alice-smart-home
