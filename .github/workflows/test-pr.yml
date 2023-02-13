@@ -1,0 +1,39 @@
+name: Test PR
+
+on:
+  pull_request:
+    types:
+      - opened
+      - synchronize
+      - closed
+      - reopened
+
+jobs:
+  lint_types:
+    runs-on: ubuntu-latest
+    environment: staging
+    name: Type-check TS
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          node-version: 16.x
+
+      - name: Install dependencies
+        run: npm i --ci
+
+      - name: Run Type Checker
+        run: npm run typecheck
+
+  lint_es:
+    needs: lint_types
+    runs-on: ubuntu-latest
+    environment: staging
+    name: Lint ESLint
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Install dependencies
+        run: npm install --ci
+
+      - name: Run Eslint
+        run: npm run lint

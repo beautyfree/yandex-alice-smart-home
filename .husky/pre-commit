@@ -1,0 +1,18 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+echo "============= Running tests =================="
+yarn test
+echo "\n"
+echo "    ✅ - Tests look good"
+echo "\n"
+echo "============= Running type check ============="
+yarn typecheck
+echo "\n"
+echo "    ✅ - Type checking is right"
+echo "\n"
+echo "============= Running Eslint ================="
+yarn lint
+echo "\n"
+echo "    ✅ - Everything is well-formatted"
+echo "\n"
