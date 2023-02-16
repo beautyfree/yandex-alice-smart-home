@@ -1750,15 +1750,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-turisap@npm:^0.0.18":
-  version: 0.0.18
-  resolution: "eslint-plugin-turisap@npm:0.0.18"
+"eslint-plugin-turisap@npm:^0.0.20":
+  version: 0.0.20
+  resolution: "eslint-plugin-turisap@npm:0.0.20"
   dependencies:
     "@typescript-eslint/utils": ^5.32.0
     requireindex: ^1.2.0
   peerDependencies:
     eslint: ">=7"
-  checksum: 954f91a3cd6ddc879f423daa85e731c9ecc8249970ac2e7e720616be5842026f0a2516bd29b5cd6cf0b1502aacd4625d25d6cb072fe21dbd48dea2f67d4481b1
+  checksum: 43dc17be8c894cb84d2ee295fa54162451a7d68cb81c45db27806556ff164475386bcabc115454f2c460c9c4f7d4d9ed81e5684bab34ee8afef3cd9ed4292588
   languageName: node
   linkType: hard
 
@@ -5072,7 +5072,7 @@ __metadata:
     eslint: ^8.23.0
     eslint-plugin-import: ^2.27.5
     eslint-plugin-simple-import-sort: ^10.0.0
-    eslint-plugin-turisap: ^0.0.18
+    eslint-plugin-turisap: ^0.0.20
     express: ^4.18.2
     express-validator: ^6.14.3
     helmet: ^6.0.1
