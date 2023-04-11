@@ -1,4 +1,4 @@
-FROM node:18.14-alpine AS builder
+FROM node:19.9-alpine AS builder
 
 USER node
 
@@ -14,7 +14,7 @@ RUN sh change_type.sh
 # Building the production-ready application code
 RUN yarn build
 
-FROM node:18.14-alpine
+FROM node:19.9-alpine
 
 USER node
 
